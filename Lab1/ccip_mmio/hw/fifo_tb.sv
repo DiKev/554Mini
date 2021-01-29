@@ -16,8 +16,8 @@ module fifo_tb();
 
 	bit signed [63:0] vals [7:0];
 
-	fifo DUT(.clk(clk), .rst_n(rst_n), .en(en),
-	        .d(d), .q(q));
+	fifo DUT(.clk(clk), .rst_n(rst_n), .WrEn(WrEn), .en(en),
+	        .Ain(Ain), .Bin(Bin), .Cin(Cin), .);
 
 	initial begin
 		clk = 1'b0;
